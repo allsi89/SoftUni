@@ -172,7 +172,6 @@ handlers.joinEvent = function (ctx) {
                 .catch(function (error) {
                     notifications.handleError(error);
                 })
-
         })
         .catch(function (error) {
             notifications.handleError(error);
@@ -182,6 +181,8 @@ handlers.joinEvent = function (ctx) {
 handlers.getProfile = function (ctx) {
     ctx.isAuth = userService.isAuth();
     ctx.username = sessionStorage.getItem('username');
+    ctx.profilePic = sessionStorage.getItem('profilePic');
+    
 
     let userId = sessionStorage.getItem('id');
 

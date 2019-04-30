@@ -1,7 +1,3 @@
-
-
-
-
 .container {
   max-width: 960px;
 }
@@ -84,11 +80,6 @@ a{
 
 footer p{
     margin-left: 1%;
-}
-
-.eventPicture{
-  /* width: 500px;
-  height: auto; */
 }
 
 .eventDetails{
@@ -238,7 +229,7 @@ transform: translate(-50%, -50%);
 
 .profile-img{
   margin: 0 auto;
-  width: 150px;
+  width: 250px;
   height: auto;
   position: static;
   top: 0;
