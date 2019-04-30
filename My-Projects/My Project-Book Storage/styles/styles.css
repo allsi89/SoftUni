@@ -1,0 +1,488 @@
+
+
+
+
+.container {
+  max-width: 960px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+footer p{
+    margin-left: 1%;
+}
+
+.eventPicture{
+  /* width: 500px;
+  height: auto; */
+}
+
+.eventDetails{
+    display: block;
+    border:2px solid black;
+    color: black;      
+    width: 25%;
+    margin: 1.5rem auto 48px auto;      
+    text-align: center;      
+    border-radius: 15px;    
+    font-size: 18px;
+    padding: 0.5rem 0;  
+    font-weight: bold;
+}
+
+a.eventDetails:hover{
+  /* text-decoration: underline;
+  color: black; */
+  background: #333;
+  color: white;
+  border: 2px solid #333;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+input.form-control{
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea.form-control{
+    width: 50%;
+    margin: 0 auto;
+    resize: none;
+    height: 20vh;
+}
+
+form label{
+  display:block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.btn{
+  width: 25%;
+  margin: 0 auto;
+  color: white;
+}
+
+.alreadyUser{
+   margin: 1%;
+}
+
+
+.error-template{
+   margin: 0 auto;
+   text-align: center;
+}
+
+#fouronefour{
+   margin: 0 auto;
+   width: 38%;
+}
+
+.alert{
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 1%;
+}
+
+.imageContainer{
+   border:2px solid black;
+   border-radius: 21px;
+}
+
+.event-details{
+   padding: 2%;
+   margin: 2%;
+   z-index: 1000;
+}
+
+.infoType{
+   text-decoration: underline;
+}
+
+.event-description{
+   font-style: italic;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+nav{
+margin-bottom: 2%;
+}
+
+.eventPlaceholder{
+flex: 0 1 45%;
+margin-bottom: 20px;
+}
+
+#eventsHolder{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.img{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;  /* border */
+  background: #FFF;
+  box-shadow: 0 0 0.9rem 0 rgba(0,0,0,0.3);
+}
+
+
+.img:before {
+display: block;
+content: '';
+padding-top: 100%;
+}
+
+img {
+display: block;
+width: 100%;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+@media screen and (max-width:900px){
+.eventPlaceholder{
+  flex: 0 1 80%;
+ 
+}
+}
+
+.profile-img{
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  position: static;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.profile-info{
+  padding: 0;
+}
+
+.details-img{
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  position: static;
+  top: 0;
+  left: 0;
+  transform: none;
+  border:1px solid black;
+}
+
+.no-found-picture, .home-event-picture{
+  top:0;
+  left:0;
+  transform: none;
+  width: 100%;
+  position: static;
+  margin: 0 auto;
+}
+
+.basic{
+    background:  url(../images/gettyimages-651033034-1542298061.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.Homer{
+  background:  url(../images/1398388295000-Homer-Simpson.jpg) no-repeat center;
+    background-size: cover;
+    height:  100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.flipping {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+  
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.homerbookinfo{
+  text-align:center
+}
+.centered{
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  z-index: 5000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+/* Main level */
+.menu {	
+  position: relative;		
+  margin-top: 0px;
+  margin-left: 25%;
+  margin-bottom: 100px;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: #e74c3c;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
