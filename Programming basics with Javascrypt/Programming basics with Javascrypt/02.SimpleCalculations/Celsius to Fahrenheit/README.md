@@ -1,3 +1,0 @@
-﻿# Celsius to Fahrenheit
-
-

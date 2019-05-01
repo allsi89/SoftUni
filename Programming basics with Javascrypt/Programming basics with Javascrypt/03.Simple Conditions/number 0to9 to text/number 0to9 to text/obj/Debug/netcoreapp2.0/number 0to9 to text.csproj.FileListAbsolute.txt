@@ -1,4 +1,0 @@
-C:\Users\HONDA\source\repos\number 0to9 to text\number 0to9 to text\obj\Debug\netcoreapp2.0\number 0to9 to text.csprojResolveAssemblyReference.cache
-C:\Users\HONDA\source\repos\number 0to9 to text\number 0to9 to text\obj\Debug\netcoreapp2.0\number 0to9 to text.csproj.CoreCompileInputs.cache
-C:\Users\HONDA\source\repos\number 0to9 to text\number 0to9 to text\obj\Debug\netcoreapp2.0\number 0to9 to text.AssemblyInfoInputs.cache
-C:\Users\HONDA\source\repos\number 0to9 to text\number 0to9 to text\obj\Debug\netcoreapp2.0\number 0to9 to text.AssemblyInfo.cs

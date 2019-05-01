@@ -1,9 +1,0 @@
-{
-  "name": "greeting-by-name",
-  "version": "0.0.0",
-  "description": "GreetingByName",
-  "main": "app.js",
-  "author": {
-    "name": "HONDA"
-  }
-}

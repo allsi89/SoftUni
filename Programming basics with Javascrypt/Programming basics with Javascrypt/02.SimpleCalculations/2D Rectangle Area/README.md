@@ -1,3 +1,0 @@
-﻿# 2D Rectangle Area
-
-

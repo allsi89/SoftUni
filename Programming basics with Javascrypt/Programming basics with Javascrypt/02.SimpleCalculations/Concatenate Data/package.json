@@ -1,9 +1,0 @@
-{
-  "name": "concatenate-data",
-  "version": "0.0.0",
-  "description": "Concatenate Data",
-  "main": "app.js",
-  "author": {
-    "name": "HONDA"
-  }
-}
