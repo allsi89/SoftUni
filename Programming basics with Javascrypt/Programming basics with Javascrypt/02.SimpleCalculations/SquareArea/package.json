@@ -1,0 +1,9 @@
+{
+  "name": "square-area",
+  "version": "0.0.0",
+  "description": "SquareArea",
+  "main": "app.js",
+  "author": {
+    "name": "HONDA"
+  }
+}

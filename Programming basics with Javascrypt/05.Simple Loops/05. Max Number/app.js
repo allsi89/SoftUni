@@ -1,0 +1,14 @@
+function maxNumber(args) {
+    let n = Number(args[0]);
+    let max = Number(args[1]);
+
+    for (let i = 1; i <= n; i++) {
+        let num = Number(args[i]);
+        if (num > max) {
+            max = num;
+        }
+
+    }
+    console.log(max);
+}
+maxNumber([3, 4, 5, 8]);

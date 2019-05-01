@@ -1,0 +1,9 @@
+{
+  "name": "2-d-rectangle-area",
+  "version": "0.0.0",
+  "description": "2D Rectangle Area",
+  "main": "app.js",
+  "author": {
+    "name": "HONDA"
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.csprojResolveAssemblyReference.cache
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.csproj.CoreCompileInputs.cache
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.AssemblyInfoInputs.cache
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.AssemblyInfo.cs
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\bin\Debug\netcoreapp2.0\number 0to 9.deps.json
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\bin\Debug\netcoreapp2.0\number 0to 9.runtimeconfig.json
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\bin\Debug\netcoreapp2.0\number 0to 9.runtimeconfig.dev.json
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\bin\Debug\netcoreapp2.0\number 0to 9.dll
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\bin\Debug\netcoreapp2.0\number 0to 9.pdb
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.dll
+C:\Users\HONDA\source\repos\number 0to9 to text\number 0to 9\obj\Debug\netcoreapp2.0\number 0to 9.pdb

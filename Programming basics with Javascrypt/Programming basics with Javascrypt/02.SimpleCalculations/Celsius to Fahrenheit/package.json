@@ -1,0 +1,9 @@
+{
+  "name": "celsius-to-fahrenheit",
+  "version": "0.0.0",
+  "description": "Celsius to Fahrenheit",
+  "main": "app.js",
+  "author": {
+    "name": "HONDA"
+  }
+}
