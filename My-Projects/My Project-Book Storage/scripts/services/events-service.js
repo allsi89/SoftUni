@@ -24,6 +24,10 @@ const eventService = (() => {
         return kinvey.get('appdata', `events?query={"_acl.creator":"${id}"}`, 'kinvey');
     }
 
+    function searchBook(book) {
+        return kinvey.get('appdata', `events?query={"name":{"$regex":"^${book}"}} `, 'kinvey');
+    }
+
     function getAllBooks(filter) {
         let query = filter 
             ? JSON.stringify({genre: filter})
@@ -39,6 +43,7 @@ const eventService = (() => {
         editEvent,
         deleteEvent,
         getMyBooks,
-        getAllBooks
+        getAllBooks,
+        searchBook
     }
 })();

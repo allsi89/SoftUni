@@ -73,6 +73,46 @@ handlers.showMoreInfo = function (ctx) {
         })
 };
 
+handlers.searchBook = function (ctx) {
+    ctx.isAuth = userService.isAuth();
+    ctx.username = sessionStorage.getItem('username');
+
+    let searchedBook = ctx.params.bookName;
+    
+    if (ctx.isAuth) {
+        eventService.searchBook(searchedBook)
+            .then(function (res) {
+                
+                ctx.books = res;
+                
+                ctx.loadPartials({
+                    header: './templates/common/header.hbs',
+                    footer: './templates/common/footer.hbs'
+                })
+                    .then(function () {
+                        this.partial('./templates/events/library.hbs');
+                    })
+                    .catch(function (err) {
+                        notifications.showError(err);
+                    });
+            })
+            .catch(function (error) {
+                notifications.handleError(error);
+            });
+    } else {
+        ctx.loadPartials({
+            header: './templates/common/header.hbs',
+            footer: './templates/common/footer.hbs'
+        })
+            .then(function () {
+                this.partial('./templates/home.hbs');
+            })
+            .catch(function (err) {
+                notifications.showError(err);
+            });
+    }
+}
+
 handlers.getEdit = function (ctx) {
     ctx.isAuth = userService.isAuth();
     ctx.username = sessionStorage.getItem('username');
@@ -120,7 +160,6 @@ handlers.editEvent = function (ctx) {
     };
     delete data.id;
 
-
     eventService.editEvent(id, data)
         .then(function () {
             notifications.showInfo('Book edited successfully.');
@@ -130,7 +169,6 @@ handlers.editEvent = function (ctx) {
         .catch(function (error) {
             notifications.handleError(error);
         })
-
 };
 
 handlers.closeEvent = function (ctx) {
@@ -181,8 +219,7 @@ handlers.joinEvent = function (ctx) {
 handlers.getProfile = function (ctx) {
     ctx.isAuth = userService.isAuth();
     ctx.username = sessionStorage.getItem('username');
-    ctx.profilePic = sessionStorage.getItem('profilePic');
-    
+    ctx.profilePic = sessionStorage.getItem('profilePic'); 
 
     let userId = sessionStorage.getItem('id');
 
@@ -204,7 +241,6 @@ handlers.getProfile = function (ctx) {
         })
         .catch(function (error) {
             notifications.handleError(error);
-
         });
 };
 
@@ -213,7 +249,6 @@ handlers.getMyBooks = function(ctx) {
     ctx.username = sessionStorage.getItem('username');
 
     let userId = sessionStorage.getItem('id');
-
 
     eventService.getMyBooks(userId)
         .then(function (res) {
@@ -226,9 +261,7 @@ handlers.getMyBooks = function(ctx) {
                     footer: './templates/common/footer.hbs'
                 })
                 .then(function () {
-
                     this.partial('templates/events/myBooks.hbs')
-
                 })
                 .catch(function (error) {
                     notifications.handleError(error);
@@ -244,7 +277,7 @@ handlers.getAllBooks = function(ctx){
         eventService.showAllEvents()
             .then(function (res) {
 
-                ctx.events = res;
+                ctx.books = res;
 
                 ctx.loadPartials({
                     header: './templates/common/header.hbs',
@@ -282,8 +315,8 @@ handlers.getGenre = function(ctx) {
 
     eventService.getAllBooks(filter)
         .then(function (res) {
-            let events = res;
-            ctx.events = events;
+            let books = res;
+            ctx.books = books;
 
             ctx.loadPartials({
                     header: './templates/common/header.hbs',

@@ -35,7 +35,9 @@ $(() => {
 
         this.get('#/myBooks', handlers.getMyBooks);
 
-        this.get('#/genres(/:genre)?', handlers.getGenre)
+        this.get('#/genres(/:genre)?', handlers.getGenre);
+
+        this.get('#/search', handlers.searchBook);
 
     });
 
