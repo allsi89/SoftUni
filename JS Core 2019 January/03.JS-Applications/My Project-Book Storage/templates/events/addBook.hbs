@@ -1,0 +1,52 @@
+{{> header}}
+<form action="#/createBook" method="post">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Add book</h1>
+        <p>Fill up the following information!</p>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputEventName" name="name" class="form-control" placeholder="Book" required=""
+               autofocus="">
+        <label for="inputEventName">Book</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputAuthor" name="author" class="form-control" placeholder="Author" required="">
+        <label for="inpuEventDate">Author</label>
+    </div>
+
+    <div class="form-label-group">
+         <span>
+                <select type="text" name="genre" class="centered">
+                    <option>Sci-fi</option>
+                    <option>Triller</option>
+                    <option>Fantasy</option>
+                    <option>Historical</option>
+                    <option>Mystery</option>
+                    <option>Science</option>
+                    <option>Crime</option>
+                    <option>Horror</option>
+                </select>                
+            </span>
+                <label for="category">Genre</label>
+    </div>
+
+    <div class="form-label-group">
+      <textarea type="text" id="inputEventDescription" name="description" class="form-control" placeholder="Description"
+                required=""></textarea>
+        <label for="inputEventDescription">Description</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputEventImage" name="imageURL" class="form-control" placeholder="Image" required=""
+               autofocus="">
+        <label for="inputEventImage">Image</label>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Add it</button>
+
+    <p class="mt-5 mb-3 text-muted text-center">© Homer`s Book Collection - 2019.</p>
+
+</form>
+{{> footer}}

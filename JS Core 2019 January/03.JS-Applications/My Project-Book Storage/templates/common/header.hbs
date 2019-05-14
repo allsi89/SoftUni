@@ -1,0 +1,48 @@
+<div>
+    {{#if isAuth}}
+    <ul class="menu cf">
+        <li><a href="#/home">Home</a></li> 
+        <li>
+            <a href="#/genres">Genres</a>
+            <ul class="submenu">
+                <li><a href="#/genres/Triller">Triller</a></li>
+                <li><a href="#/genres/Sci-fi">Sci-fi</a></li>
+                <li><a href="#/genres/Mystery">Mystery</a></li>
+                <li><a href="#/genres/Historical">Historical</a></li>
+                <li><a href="#/genres/Fantasy">Fantasy</a></li>
+                <li><a href="#/genres/Horror">Horror</a></li>
+                <li><a href="#/genres/Crime">Crime</a></li>
+                <li><a href="#/genres/Science">Science</a></li>
+            </ul>
+        </li>
+        <li><a href="#/library">Library</a></li>
+        <li><a href="#/myBooks">My books</a></li>
+        <li><a href="#/createBook">Add book</a></li>
+        <li><a href="#/profile">{{username}}</a></li>
+        <li><a href="#/logout">Logout</a></li>        
+    </ul>
+
+    <div class="searchBar">
+        <form id="searchthis" action="#/search" style="display:inline;" method="get">
+            <input id="namanyay-search-box" name="bookName" size="40" type="text" placeholder="Search" />
+            <input id="namanyay-search-btn" value="Go" type="submit" />
+        </form>
+    </div>
+    
+    {{else}}
+    <ul class="menu cf ">
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#/login">Login</a></li>
+    </ul>
+    {{/if}}
+</div>

@@ -1,0 +1,53 @@
+{{> header}}
+<form action="#/edit/{{_id}}" method="post">
+
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Edit Book</h1>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inputEventName" name="name" class="form-control" placeholder="Book" required=""
+               autofocus="" value="{{name}}">
+        <label for="inputEventName">Event</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" id="inpuEventDate" name="author" class="form-control" placeholder="Author" required=""
+               value="{{author}}">
+        <label for="inpuEventDate">Author</label>
+    </div>
+
+    <div class="form-label-group">
+         <span>
+                <select type="text" name="genre" class="centered">
+                    <option>Sci-fi</option>
+                    <option>Triller</option>
+                    <option>Fantasy</option>
+                    <option>Drama</option>
+                    <option>Classic</option>
+                    <option>Science</option>
+                    <option>Biography</option>
+                </select>                
+            </span>
+                <label for="category">Genre</label>
+    </div>
+
+    <div class="form-label-group">
+      <textarea type="text" id="inputEventDescription" name="description" class="form-control" placeholder="Description"
+                required="">{{description}}</textarea>
+        <label for="inputEventDescription">Description</label>
+    </div>
+    <div class="form-label-group">
+        <input type="text" id="inputEventImage" name="imageURL" class="form-control" placeholder="Image" required=""
+               autofocus="" value="{{imageURL}}">
+        <label for="inputEventImage">Image</label>
+    </div>
+    <div style="display: none">
+        <input name="creator" value="{{organizer}}"/>
+        <input name="likes" value="{{likes}}"/>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Edit it</button>
+</form>
+
+{{> footer}}

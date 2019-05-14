@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>List of Items</h1>
+<ul id="items"></ul>
+<input type="text" id="newText"/>
+<input type="button" value="Add"
+       onclick="addItem()">
+<script>
+    function addItem() {
+        let $text = $('#newText');
+        let $itemsList = $('#items');
+        let $listItem = $('<li>');
+        let $buttonDel = $('<button>Delete</button>');
+
+        $buttonDel.on('click', deleteItem);
+
+        $listItem.text($text.val());
+        $listItem.append($buttonDel);
+        $itemsList.append($listItem);
+
+
+        function deleteItem(event) {
+            let $button = $(event.target);
+            $button.parent().remove();
+        }
+    }
+</script>
+
+</body>
+</html>
+
+

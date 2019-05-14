@@ -1,0 +1,42 @@
+{{>header}}
+{{#if isAuth}}
+<div id="eventsHolder">
+    {{#each books}}
+    <div class="flipping col-md-2">
+        <div class="card-container">
+            <div class="card">
+                <div class="side"><img src="{{imageURL}}" alt="Author"></div>
+                <div class="side back">
+                    <a href="#/moreDetails/{{_id}}">view me</a>
+                </div>
+            </div>
+        </div>
+        <p class="d-block mb-3 text-muted homerbookinfo centered">{{name}}</p>
+    </div>
+    
+    {{else}}
+    <div class="row">
+        <div class="col-md-12">
+            <div id="fouronefour">
+                <img class="no-found-picture" src="./images/404face.png" />
+            </div>
+            <div class="error-template">
+                <h1>
+                    Oops!</h1>
+                <h2>
+                    404 Not Found</h2>
+                <div class="error-details">
+                    book not found
+                </div>
+                <div class="actions">
+                    <a href="#/createEvent" class="btn btn-dark btn-lg">Add the first one? </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+
+{{/if}}
+{{>footer}}
