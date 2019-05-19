@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="get">
+        <fieldset>
+            <legend>Customer Details</legend>
+
+            <div>
+                <label for="firstName">
+                    First Name
+                    <input type="text" id="firstName" name="firstName" placeholder="George" autofocus>
+                </label>
+            </div><br>
+            <div>
+                <label for="lastName">
+                    Last Name
+                    <input type="text" id="lastName" name="lastName" placeholder="Devis">
+                </label>
+            </div><br>
+            <div>
+                <label for="male">
+                    Male
+                    <input type="radio" id="male">
+                </label>
+                <label for="female">
+                    Female
+                    <input type="radio" id="female">
+                </label>
+                <label for="other">
+                    Other
+                    <input type="radio" id="other">
+                </label>
+            </div><br>
+            <div>
+                Preferred contact method:
+                <label for="emailOption">
+                    Email
+                    <input type="radio" id="emailOption">
+                </label>
+                <label for="phoneOption">
+                    Phone
+                    <input type="radio" id="phoneOption">
+                </label>
+            </div><br>
+            <div>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
+                </label>
+            </div><br>
+            <div>
+                <label for="phone">Phone
+                    <input type="text" name="phone" id="phone" placeholder="+359885236225">
+                </label>
+            </div><br>
+            <div>
+                <label for="town">Town
+                    <select name="town" id="town">
+                        <option value="Varna">Varna</option>
+                        <option value="Plovdiv">Plovdiv</option>
+                        <option value="Burgas">Burgas</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Pleven">Pleven</option>
+                    </select>
+                </label>
+            </div><br>
+            <div>
+                <label for="age">Age
+                    <input type="number" name="age" id="age" min="18" max="70">
+                </label>
+            </div><br>
+            <div>
+                <label for="languagesChoice">
+                    Programming language
+                    <input list="languages" id="languagesChoice">
+
+                    <datalist id="languages">
+                        <option value="Java"></option>
+                        <option value="PHP"></option>
+                        <option value="C#"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Ruby"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                </label>
+            </div><br>
+            <div>
+                <label for="moreInfo">
+                    <textarea name="moreInfo" id="moreInfo" cols="20" rows="5" placeholder="More information..."></textarea>
+                </label>
+            </div><br>
+            <div>
+                <label for="OOP">
+                    <input type="checkbox" value="checked" id="OOP">
+                    I agree the Terms and Conditions
+                </label>
+            </div><br>
+            <div>
+                <label for="submit">
+                    <input type="submit" id="submit" value="Send">
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
