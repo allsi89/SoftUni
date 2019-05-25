@@ -1,0 +1,35 @@
+html{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Georgia, serif;
+    margin-left: 20px;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 85%;
+    max-height: 15%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+article {
+    background-color: rgb(51, 102, 153);
+    color: white;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+p {
+    
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
