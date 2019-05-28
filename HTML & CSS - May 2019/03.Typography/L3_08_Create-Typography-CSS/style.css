@@ -1,0 +1,81 @@
+html {
+    font-family: Helvetica, sans-serif ;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, serif ;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2{
+  font-size: 2.1em;
+}
+
+h3{
+  font-size: 1.8em;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h5{
+  font-size: 1.3em;
+}
+
+h6{
+  font-size: 1.15em;
+}
+
+body {
+    padding: 4em;
+}
+
+table {
+    width: 100%;
+    border: 1px solid grey;
+    border-spacing: 0;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  thead th:nth-child(1) {
+    width: 33%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 33%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 33%;
+  }
+  
+  th, td {
+    height: 2.3em;
+    border: 1px solid grey;
+  }
+
+  td{
+      padding-left: 10px;
+  }
+
+  th {
+      background-color: #b3b3b3;
+  }
+
+  blockquote {
+      border-left: 2px solid rgb(221,221,221);
+      padding: 1em;
+      font-style: italic;
+  }
+
+  .koko {
+      text-align: right;
+  }

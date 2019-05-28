@@ -1,0 +1,14 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+body{
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+.icons{
+    list-style-type: none;
+}
+
+i {
+    margin-right: 0.3em;
+}

@@ -1,0 +1,25 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+.greenBox {
+    background: green;
+}
+
+.orangeBox {
+    background-color: orange;
+}
+
+p {
+    max-width: 130px;
+    line-height: 2em;
+    border-radius: 3px;
+}
+
+.click, .email{
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+i {
+    margin-right: 0.3em;
+}
