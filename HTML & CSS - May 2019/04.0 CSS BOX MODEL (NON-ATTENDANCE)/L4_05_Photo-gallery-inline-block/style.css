@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+ul {
+    margin: 10%;
+    width: 80%;
+}
+
+li {
+    display: inline-block;
+    border-width: 0.4rem;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 1rem;
+    vertical-align: middle;
+    width: 300px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
