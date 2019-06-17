@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif|Pacifico&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2.1rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+.site-header p, .site-header nav , .site-header ul, .site-header li{
+    display: inline-block;
+}
+
+.site-header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.site-header ul li {
+    background-color: coral;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+    width: 7rem;
+    height: auto;
+}
+
+.site-header {
+    background-color: rgb(241, 245, 248);
+    padding: 1rem 2rem;
+}
+
+.site-header p {
+    color: coral;
+    width: 37rem; 
+    font-size: 30px;
+    font-family: Pacifico, serif;
+}
+
+.site-header ul li a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f015';
+    display: inline-block;
+    font-weight: 900;
+    margin: 0;
+    padding-right: 0.4em;
+}
+
+.site-header ul li:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+p, ul, li, a {
+    box-sizing: border-box;
+}
+
+.site-title {
+    display: inline-block;
+    padding: 13rem 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('../Requirements-and-Resources/img/brooke-lark-210780-unsplash\ \(1\).jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.site-title h1, .site-title p {
+    width: 50rem;
+    margin: 0 auto;
+}    
+
+.site-title h1 {
+    font-size: 3.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px black  ;
+}
+
+.secondary-title {
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+.flower-types {
+    background-color: coral; 
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.flower-types h3, .flower-types p {
+    margin: 0 auto;
+    width: 53rem;
+}
+
+.flower-types button {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    color: coral;
+    border-radius: 1em;
+    border: none;
+    padding: 1em;
+    font-weight: 700; 
+}
+
+.flower-types h3, .flower-types p, .flower-types button {
+    margin-bottom: 2rem;
+}
+
+.media {
+    display: inline-block;
+    width: 17rem;
+    padding: 2rem 1rem;
+    vertical-align: top;
+}
+
+.articles {
+    padding: 2rem 0;
+    text-align: center;
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.articles span {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.first-pic {
+    background: url("../Requirements-and-Resources/img/flower-curves.png");
+}
+
+.second-pic {
+    background: url("../Requirements-and-Resources/img/calendar.png");
+}
+
+.third-pic {
+    background: url("../Requirements-and-Resources/img/smile.png");
+}

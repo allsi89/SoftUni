@@ -1,0 +1,54 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    padding: 2rem 16rem;
+    background-color: rgb(238, 238, 238);
+}
+
+hr {
+    border: 1px solid black;
+}
+
+article {
+    padding-bottom: 2rem;;
+}
+
+.site-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.escalator {
+    float: right;
+    clear: both;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin-left: 1em;
+}
+
+blockquote {
+    font-style: italic;
+    width: 40%;
+    height: auto;
+    float: right;
+    clear: both; 
+    border-left: 2px solid rgb(221, 221, 221);
+    text-align: right;
+    vertical-align: top;
+    margin-top: 0;
+    color: rgb(120, 120, 120);
+}
+
+.forest-pic {
+    float: left;
+    clear: both;
+    border: 2px solid black;
+    padding: 0.5em;
+    margin: 0 1em 1em 0;
+}

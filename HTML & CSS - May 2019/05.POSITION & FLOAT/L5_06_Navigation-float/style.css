@@ -1,0 +1,122 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 2rem 12rem;
+}
+
+main {
+    max-width: 70%;
+    display: inline-block;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 57%;
+}
+
+.title, .navi {
+    vertical-align: middle;
+}
+
+.navi ul, .navi li, .title, nav{
+    display: inline-block;
+}
+
+.navi {
+    text-align: right;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.navi ul {
+    margin: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.navi li {
+    margin-right: 1rem;
+}
+
+.escalator {
+    float: right;
+    clear: both;
+    border: 2px solid black;
+    padding: 0.5em;
+    vertical-align: top;
+    margin-left: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    width: 40%;
+    height: auto;
+    float: right;
+    clear: both; 
+    border-left: 2px solid rgb(221, 221, 221);
+    text-align: right;
+    margin-top: 0;
+    color: rgb(120, 120, 120);
+}
+
+blockquote, h1, h2, h3 {
+    font-family:  Georgia, serif;
+    font-size: 1em/1.2;
+}
+
+.woods {
+    border: 2px solid rgb(0, 0, 0);
+    float: left;
+    clear: both;
+    padding: 0.5em;
+    vertical-align: top;
+    margin: 0 1rem 1rem 0;
+}
+
+a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+aside nav ul {
+    list-style: square;
+}
+
+aside {
+    float: right;
+    clear: both;
+    position: relative;
+    top: 0;
+    right: 5rem;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) ;
+}
+
