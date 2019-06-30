@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 16px/1.5;
+}
+
+body {
+    padding: 3rem 5rem;
+}
+
+header h1 {
+    font-size: 3rem/1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex: 4 1 70%;
+}
+
+header {
+    flex-wrap: wrap;
+}
+
+nav {
+    flex: 0 1 30%;
+    justify-content: flex-end;
+}
+
+.space-between li {
+    display: flex;
+    flex: 1 1 3rem;
+    padding: 0 1.5rem;
+}
+
+header, nav, nav ul , nav ul li, a{
+    display: flex;
+}
+
+header ul a {
+    text-decoration: none ;
+    color: rgb(0, 153, 0);
+}
+
+hr {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    flex: 4 1 40%;
+    margin: 3rem 0;
+}
+
+main > * {
+    padding-bottom: 1rem;
+}

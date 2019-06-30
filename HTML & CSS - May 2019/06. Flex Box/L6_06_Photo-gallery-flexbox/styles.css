@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, section, ul, li {
+    display: flex;
+}
+
+section {
+    flex: 0 0 100%;
+    padding: 3rem;
+    height: auto;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+ul {
+    flex: 0 0 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    flex: 0 1 18rem;
+    height: 27rem;
+    border: 4px solid black;
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+}
+
+img {
+    width: 16rem;
+}
+
+.landscape img::before {
+    display: block;    
+    content: '';
+    padding-top: 56.25%;
+}
+
+li.landscape img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    padding: 0 5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 15vw;
+    height: 35rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid coral;
+}
+
+span {
+    display: flex;
+    border: 1px solid black;
+    flex: 0 1 5.2rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.es {
+    order: 1;
+}
+
+.eich {
+    order: 2;
+}
+
+.e {
+    order: 3;
+}
+
+.t_upper {
+    order: 4;
+}
+
+.m_lower {
+    order: 5
+}
+
+.m_upper {
+    order: 6;
+}
+
+.a {
+    order: 7;;
+}
+
+.l {
+    order: 8;
+}
+
+.n {
+    order: 9;
+}
+
+.t_lower {
+    order: 10;
+}
+
+.i {
+    order: 11;
+}
+
+.c {
+    order: 12;
+}
+
+.n, .t_lower, .i, .c {
+    margin-right: 1rem;
+}
