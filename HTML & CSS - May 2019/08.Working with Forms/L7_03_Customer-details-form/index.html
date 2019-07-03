@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Details Form</title>
+</head>
+<body>
+    <form action="get">
+        <fieldset>
+
+            <header>
+                <h1>Customer Details</h1>
+            </header>
+            <p>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="George">
+            </p>
+            <p>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Devis">
+            </p>
+            <p>
+                <label for="gender">Gender</label>
+                <input type="radio" name="male" id="male">
+                <label class="radio" for="male">Male</label>
+                <input class="radio" type="radio" name="female" id="female" value="Female">
+                <label for="male">Female</label>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="your@email.com">
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" id="phone" placeholder="+359885236225">
+            </p>
+            <p>
+                <label for="town">Town</label>
+                <select name="town" id="town">
+                    <option value="Varna">Varna</option>
+                </select>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </p>
+            <p>
+                <label for="language">Language</label>
+                <input type="text" name="language" id="language">
+            </p>
+            <p class="message">
+                <label for="message">Message</label>
+                <textarea rows="5" cols="35" placeholder="More information..."></textarea>
+            </p>
+            <p class="check">
+                <input type="checkbox">
+                <label for="terms">I agree the terms and conditions</label>
+            </p>
+            <p class="sub">
+                <input class="submit" type="submit" value="Send">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

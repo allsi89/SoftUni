@@ -1,0 +1,84 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+}
+
+form {
+    display: block;
+    min-width: 25rem;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: block;
+    padding: 1.5rem;
+}
+
+legend {
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    margin-left: -1.6rem;
+}
+
+fieldset p {
+    display: flex;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    position: relative;
+}
+
+input {
+    height: 2rem;
+}
+
+fieldset, legend, input {
+    border-radius: 0.3rem;
+}
+
+label {
+    flex: 0 1 20%;
+}
+
+i {
+    position: absolute;
+    top: 0.5rem;
+    left: 5.5rem;
+}
+
+.fullwidth {
+    border: 2px solid rgb(214, 214, 214);
+    width: 20rem;
+    padding-left: 2rem;
+}
+
+.login {
+    border: none;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255,255,255);
+    padding: 0.5rem 1.5rem;
+}
+
+legend,fieldset {
+    border: 2px solid rgb(115, 115, 115);
+
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="password"]:focus,
+input[type="password"]:hover, i {
+    border-color: rgb(45, 45, 45);
+    color: rgb(199, 23, 23);
+}

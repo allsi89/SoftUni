@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+form, fieldset {
+    min-height: 94vh;
+    border: none;
+}
+
+form {
+    display: block;
+    width: 30%;
+    margin: 2rem auto;
+    background-color: rgb(173, 216, 230);
+}
+
+fieldset {
+    display: block;
+    padding: 1.5rem 0;
+}
+
+fieldset p {
+    display: flex;
+    flex: 0 1 90%;
+    height: 2rem;
+    margin: 1rem auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+header {
+    text-align: center;
+}
+
+label {
+    flex: 0 1 6rem;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+    display: flex;
+    flex: 0 1 60%;
+    height: 2rem;
+}
+
+input {
+    padding-left: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+label.radio {
+    flex: 0 1 15%;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.message label {
+    flex: 0 1 24%;
+}
+
+.check label {
+    flex: 1 1 70%;
+    padding-left: 0.5rem;
+}
+
+.submit {
+    padding: 0;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    background-color: rgb(35, 68, 101);
+    color: rgb(255,255,255);
+    border: none;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+form, .submit {
+    border-radius: 0.5rem;
+}

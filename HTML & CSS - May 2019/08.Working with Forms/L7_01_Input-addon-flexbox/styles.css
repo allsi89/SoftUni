@@ -1,0 +1,82 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+}
+
+form, fieldset{
+    display: flex;
+}
+
+form {
+    max-width: 25rem;
+}
+
+fieldset {
+    flex: 1 1 20rem;
+    padding: 1.5rem;
+    min-height: 17rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(249, 249, 249);
+    position: relative;
+}
+
+legend {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    margin: -1.6rem;
+}
+
+input {
+    display: block;
+    height: 2rem;
+    border-style: none; 
+}
+
+fieldset, legend, input{
+    border: 2px solid rgb(183, 183, 183);
+}
+
+fieldset, legend, input.fullwidth {
+    border-radius: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+input.fullwidth {
+    width: 100%;
+    border-width: 1px;
+    
+}
+
+i {
+    position: absolute;
+    padding: 0.5rem;
+}
+
+.login {
+    width: 5rem;
+    height: 1.7rem;
+}
+
+label, input.login {
+    margin-top: 1.2rem;
+}
+
+
+
+
+
