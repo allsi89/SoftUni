@@ -1,0 +1,188 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@import url("./typography.css");
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1.7rem;
+    background: linear-gradient(rgba(0, 0, 0,0.5), rgba(0, 0, 0, 0.6)), url("./images/image-bg.jpg") no-repeat top center;
+    
+}
+
+header nav {
+    margin-bottom: 4rem;   
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header p, h1 {
+    padding-bottom: 1rem;
+}
+
+header p {
+    font-style: italic;
+}
+
+.scroll {
+    padding: 1rem 1.5rem;
+    background-color: rgb(91, 186, 208);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(239, 239, 239);
+    flex-wrap: wrap;
+}
+
+section.main {
+    display: flex;
+    flex: 0 0 80%;
+    flex-wrap: wrap;
+}
+
+.main section {
+    flex: 0 0 50%;
+    height: 23rem;
+}
+
+.main section img {
+    width: auto;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.article {
+    background-color: rgb(255,255,255);
+    color: rgb(214, 160, 94);
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+.article h3 {
+    padding-bottom: 1.2rem;
+}
+
+.article p {
+    padding-bottom: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.alpinist, .skying {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+main section input {
+    border: 2px solid rgb(38, 83, 99);
+    color: rgb(38, 83, 99);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.clients-feedback {
+    padding: 1.5rem 0;
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.clients-feedback h2 {
+    font-weight: 300;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(76, 76, 76);
+}
+
+.clients-feedback ul {
+    display: flex;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-feedback ul li {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+
+.image {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.client {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+form p::before {
+    display: block;
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: '\f007';
+}
