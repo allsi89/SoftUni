@@ -1,0 +1,77 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap');
+
+*, *::before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4rem 8rem;
+}
+
+.wrapper {
+    display: flex;
+    flex: 0 0 100%;
+    padding: 4rem 6rem;
+    justify-content: center;
+    border: 1px solid black;
+    background: url("../Requirements-and-Resources/images/image.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background-color: rgb(18, 41, 81);
+    opacity: 0.8;
+}
+
+.wrapper ul > i {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.wrapper ul {
+    display: flex;
+    flex: 0 0 70%;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper ul li {
+    list-style: none outside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.wrapper ul li i {
+    font-size: 3rem;
+    color: rgb(236, 132, 33);
+    padding-bottom: 1rem;
+}
+
+.wrapper ul li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+
+

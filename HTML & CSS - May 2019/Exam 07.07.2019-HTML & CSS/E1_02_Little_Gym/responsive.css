@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+    
+    header nav {
+        display: none;
+    }
+
+    body main.site-main {
+        margin: 0;
+    }
+
+    section.site-information-text {
+        flex: 0 0 100%;
+    }
+
+    div.site-form {
+        margin-top: 0;
+    }
+
+    section.site-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 5rem;
+    }
+
+    section.site-form-container > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-form form > p {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .site-form label,
+    .site-form input {
+        display: block;
+        flex: 0 0 100%;
+    }
+
+    .site-form button {
+        margin: 0;
+    }
+
+    .site-blog .site-posts {
+        display: block;
+    }
+
+
+
+}
