@@ -8,7 +8,7 @@ const cubeSchema = new Schema({
     description: {type: mongoose.SchemaTypes.String, required: true},
     imageUrl: {type: mongoose.SchemaTypes.String, required: true},
     difficultyLevel: {type: mongoose.SchemaTypes.Number, required: true},
-    accessories: [{type: mongoose.SchemaTypes.ObjectId, ref: 'Accessory'}]
+    //accessories: [{type: mongoose.SchemaTypes.ObjectId, ref: 'Accessory'}]
 });
 
 cubeSchema.path('name')

@@ -25,13 +25,13 @@ module.exports = {
                 res.redirect('/');
             })
     },
-    details: (req, res, next) => {
-        const cubeId = req.params.id;
+    details: (req, res) => {
+        const id = req.params.id;
 
-        Cube.findById(cubeId)
+        cubeModel.findById(id)
             .then((cube) => {
-                res.render('details', cube)
+                res.render('details', cube);
             })
-            .catch((e) => next(e));
+            .catch((err) => console.log(err));
     }
 };
